@@ -28,11 +28,203 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.formContainer {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+ 
+  
+} 
+
+.formWrapper {
+  display:flex;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+.registerButton {
+  background-color: grey;
+  padding: 5px;
+}
+
+input {
+  padding: 15px;
+  border: #282c34;
+  border-bottom: 1px solid black;
+}
+
+.homePage {
+  background-color: lightgrey;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 65%;
+  height: 80%;
+  display: flex;
+  overflow: hidden;
+
+}
+
+.sideBar {
+  border-right: 1px solid black;
+  background-color: dimgray;
+  flex: 1;
+}
+
+.chatPos {
+  flex: 2;
+  
+}
+
+
+.infoChat {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background-color: dimgray;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.naviBar {
+  display: flex;
+  align-items: center;
+  background-color: darkgray;
+  height: 10%;
+  padding: 10px;
+  justify-content:center;
+}
+
+.userDetails {
+  display: flex;
+  color: white;
+  gap: 20px;
+}
+
+.buttonSignout {
+  background-color: dimgray;
+  font-size: small;
+  border: none;
+  color: white;
+}
+
+.searchContainer {
+  border-bottom: 1px solid black;
+}
+
+.chatUser {
+
+  padding: 10px;
+  margin: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkgrey;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.formSearch {
+  padding: 10px;
+}
+
+.inputSearch {
+  background-color: transparent;
+  color: black;
+  border: none;
+  width: 100%;
+  outline: none;
+
+  &::placeholder{
+    color: black;
   }
+
+}
+
+
+.messages {
+  background-color: silver;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100% - 130px);
+ 
+}
+
+.inputClass {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.userFont {
+  font-weight: bold;
+}
+
+.chatBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+ 
+}
+
+.chatBox p {
+  margin: 0;
+  font-weight:lighter;
+}
+
+.messageInfo {
+  max-width: 70;
+  display: flex;
+  padding: 10px;
+
+}
+
+.message {
+  display: flex;
+
+
+  &.owner{
+    flex-direction: row-reverse;
+  }
+
+}
+.sentMessage {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 0px 10px 10px 10px;
+
+ 
 }
